@@ -17,7 +17,7 @@ def publisher_adder(in_file, out_file):
         publishers.append(pubs[i]["publisher"])
     
     for i in range(len(data)):
-        if data[i]["publication_type"] == "Book" or data[i]["publication_type"] == "Journal":
+        if (data[i]["publication_type"] == "Book" or data[i]["publication_type"] == "Journal") and (data[i]["publisher"] is None or data[i]["publisher"] == ""):
             data[i]["publisher"] = publishers[np.random.randint(0, len(publishers))]
     
     with open(out_file, 'w') as f:
