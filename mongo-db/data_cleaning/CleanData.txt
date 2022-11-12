@@ -1,0 +1,40 @@
+//FROM COMMAND LINE IN MONGOSH
+//dataset = name of the collection of the database we are working with
+use dataset
+
+//Remove fields from all documents
+db.dataset.updateMany(
+   { },
+   { $unset: { year: "" } }
+)
+
+db.dataset.updateMany(
+   { },
+   { $unset: { n_citation: "" } }
+)
+
+db.dataset.updateMany(
+   { },
+   { $unset: { pdf: "" } }
+)
+
+//Done for title, page_start, page_end, doi, volume, issue, isbn, abstract, issn
+db.dataset.updateMany(
+   { volume : {$eq : ""} }, 
+   { $unset: {volume: ""}}
+)
+
+//FROM THE FILTERING OPTION
+//Clean the data
+{$and: [{ title: { $not: { $regex: '^[1-9]' } }},{ page_start: { $regex: '^[0-9]+$' }},{ page_end: { $regex: '^[0-9]+$' }}, {volume : {$not : { $eq : "null"}}}, {abstract: {$not : {$eq : null}}}, {references: {$not : {$eq : null}}}, {keywords: {$not : {$eq : null}}}, {"venue.raw" : {$exists : true}}]}
+
+//FROM PYTHON AND COMMAND LINE
+//Export the data in 'datasetMongo.json' maintaining only the fields we want (delete all the fields from venue, leaving only 'raw')
+//Download the python code 'extractAddVenue.py' and put the json file in the same folder
+//Run the python code
+//In the same folder we have the 'addVenue.json', the file of cleaned data with the '{venue : {raw : "VALUE"}}' substituted with 'venue : "VALUE"' having the field at the level of the document, not the subdocument
+//Now open the 'addVenue.json' file in vim and execute:
+  :%s/"page_start": "\([0-9]*\)"/"page_start": \1/g 
+  :%s/"page_end": "\([0-9]*\)"/"page_end": \1/g 
+  :wq
+//Importing the 'addVenue.json' file in Mongo we have have page_start and page_end as Int32 elements
