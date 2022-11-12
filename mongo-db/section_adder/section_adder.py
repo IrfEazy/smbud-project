@@ -3,6 +3,7 @@ import csv
 import numpy as np
 import os.path
 import sys
+import author
 
 # Starting from depth 0
 BASE_DEPTH = 0
@@ -114,6 +115,7 @@ if sys.argv is not None and len(sys.argv) > 1:
         out_file = sys.argv[2]
 
     add_sections(in_file, out_file)
+    author.email_bio_date_adder(out_file, out_file)
     print("Done!")
 else:
     print("Too few arguments")
