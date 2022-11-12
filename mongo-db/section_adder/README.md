@@ -18,7 +18,11 @@ If OUT_FILE is not given then IN_FILE will be overriden
 {
     title: string,
     paragraphs: [string],
+    figures: [ {URL: string,
+            caption:string}
+        ]
     subsections: [ {title: string,
     		    paragraphs: [string]}
-		 ]
+		]
+
 }
