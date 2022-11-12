@@ -15,6 +15,7 @@ MAX_PAR = 5
 REVIEWS_FILE = 'data/Reviews.csv'
 SECTIONS_FILE = 'data/sections.json'
 URL_FILE = 'data/random_image_URLs.json'
+CAPTION_FILE = 'data/random_captions.json'
 
 RAND_PAR = np.random.RandomState(672584343)
 RAND_SECTION_DEPTH = np.random.RandomState(267524343)
@@ -57,11 +58,14 @@ def create_sections():
     
         with open(URL_FILE) as url_f:
             url_data = json.load(url_f)
+        
+        with open(CAPTION_FILE) as caption_f:
+            caption_data = json.load(caption_f)
 
             try:
                 while True:
                     depth_level = 1
-                    json_out.append(create_section(csv_data_iter, url_data, BASE_DEPTH, depth_level))
+                    json_out.append(create_section(csv_data_iter, url_data, caption_data, BASE_DEPTH, depth_level))
             except StopIteration:
                 print("Sections created!")
 
@@ -69,7 +73,7 @@ def create_sections():
         json.dump(json_out, ofile, indent=4)
 
 
-def create_section(csv_iterator, urls, level, max_depth):
+def create_section(csv_iterator, urls, captions, level, max_depth):
     try:
         if level > max_depth:
             return None
@@ -89,7 +93,8 @@ def create_section(csv_iterator, urls, level, max_depth):
         num_figures = RAND_PAR.randint(1, num_paras+1)
         figures = []
         for i in range(num_figures):
-            figures.append({"URL": urls[np.random.randint(len(urls))]['image_URL'], "caption": "caption"})
+            index = np.random.randint(len(urls))
+            figures.append({"URL": urls[index]['image_URL'], "caption": captions[index]['caption']})
 
         section['figures'] = figures
 
@@ -98,7 +103,7 @@ def create_section(csv_iterator, urls, level, max_depth):
         if level < max_depth:
             subsections = []
             for i in range(RAND_SUBSECTIONS.randint(1,MAX_SUBSECTION)):
-                subsections.append(create_section(csv_iterator, urls, level + 1, max_depth))
+                subsections.append(create_section(csv_iterator, urls, captions, level + 1, max_depth))
 
             section['subsections'] = subsections
 
