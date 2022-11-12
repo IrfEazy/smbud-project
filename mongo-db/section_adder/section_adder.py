@@ -55,16 +55,15 @@ def create_sections():
         csv_data = csv.DictReader(f)
         csv_data_iter = csv_data.__iter__()
     
-    with open(URL_FILE) as url_f:
-        url_data = json.load(url_f)
+        with open(URL_FILE) as url_f:
+            url_data = json.load(url_f)
 
-        # We create a section only if there are at least 5 paragraphs
-        try:
-            while True:
-                depth_level = 1 # RAND_SECTION_DEPTH.randint(2, MAX_SECTION_DEPTH)
-                json_out.append(create_section(csv_data_iter, url_data, BASE_DEPTH, depth_level))
-        except StopIteration:
-            print("Sections created!")
+            try:
+                while True:
+                    depth_level = 1
+                    json_out.append(create_section(csv_data_iter, url_data, BASE_DEPTH, depth_level))
+            except StopIteration:
+                print("Sections created!")
 
     with open(SECTIONS_FILE, 'w') as ofile:
         json.dump(json_out, ofile, indent=4)
