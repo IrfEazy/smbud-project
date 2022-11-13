@@ -11,7 +11,7 @@ def email_bio_date_adder(in_file, out_file):
 
 	for i in range(len(my_dataset)):
 		doc = my_dataset[i]
-		doc['date'] = dates[i]['date']
+		doc['date'] = dates[np.random.randint(0, len(dates))]['date']
 		if 'year' in doc.keys():
 			doc.pop('year')
 		if 'authors' in doc.keys():
