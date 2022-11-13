@@ -26,7 +26,7 @@ db.dataset.updateMany(
 
 //FROM THE FILTERING OPTION
 //Clean the data
-{$and: [{ title: { $not: { $regex: '^[1-9]' } }},{ page_start: { $regex: '^[0-9]+$' }},{ page_end: { $regex: '^[0-9]+$' }}, {volume : {$not : { $eq : "null"}}}, {abstract: {$not : {$eq : null}}}, {references: {$not : {$eq : null}}}, {keywords: {$not : {$eq : null}}}, {"venue.raw" : {$exists : true}}]}
+{$and: [{ title: { $not: { $regex: '^[1-9]' } }},{ page_start: { $regex: '^[0-9]+$' }},{ page_end: { $regex: '^[0-9]+$' }}, {volume : {$not : { $eq : "null"}}}, {abstract: {$not : {$eq : null}}}, {references: {$not : {$eq : null}}}, {keywords: {$not : {$eq : null}}}, {"venue.raw" : {$exists : true}}, { page_start: { $not: { $regex: '^[0]'}}}, { page_end: { $not: { $regex: '^[0]'}}}]}
 
 //FROM PYTHON AND COMMAND LINE
 //Export the data in 'datasetMongo.json' maintaining only the fields we want (delete all the fields from venue, leaving only 'raw')
