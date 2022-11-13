@@ -1,4 +1,5 @@
 .DS_Store
+mongo-db/section_adder/data/*
 mongo-db/section_adder/data/Reviews.csv
 mongo-db/section_adder/data/sections.json
 mongo-db/section_adder/data/dataset.json

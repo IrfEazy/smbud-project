@@ -9,6 +9,7 @@ import author
 BASE_DEPTH = 0
 MAX_SECTION_DEPTH = 1
 MAX_SUBSECTION = 5
+MAX_SECTIONS = 10
 
 MAX_PAR = 5
 
@@ -37,13 +38,13 @@ def add_sections(in_file, out_file=None):
         paper_dataset = json.load(i_file)
 
     # Integer division
-    max_sections = len(sections_data) // len(paper_dataset)
+    max_sections = MAX_SECTIONS 
     min_sections = max_sections // 2
     if min_sections < 1:
         raise Exception("Too few sections")
 
     for paper in paper_dataset:
-        indx = np.randint(0, len(sections_data)
+        indx = RAND_SECTIONS.randint(0, len(sections_data))
         sections = [sections_data[indx] for i in range(RAND_SECTIONS.randint(min_sections, max_sections))]
         paper['sections'] = sections
 
