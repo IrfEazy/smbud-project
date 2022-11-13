@@ -1,6 +1,7 @@
 import json
 import numpy as np
 
+RND_DATE = np.random.RandomState(674516585) 
 DATES_FILE = 'data/random_dates.json'
 
 def email_bio_date_adder(in_file, out_file):
@@ -11,7 +12,8 @@ def email_bio_date_adder(in_file, out_file):
 
 	for i in range(len(my_dataset)):
 		doc = my_dataset[i]
-		doc['date'] = dates[i]['date']
+		date = dates[RND_DATE.randint(len(dates))]['date']
+		doc['date'] = date
 		if 'year' in doc.keys():
 			doc.pop('year')
 		if 'authors' in doc.keys():
