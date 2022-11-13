@@ -43,7 +43,8 @@ def add_sections(in_file, out_file=None):
         raise Exception("Too few sections")
 
     for paper in paper_dataset:
-        sections = [sections_data.pop() for i in range(RAND_SECTIONS.randint(min_sections, max_sections))]
+        indx = np.randint(0, len(sections_data)
+        sections = [sections_data[indx] for i in range(RAND_SECTIONS.randint(min_sections, max_sections))]
         paper['sections'] = sections
 
     with open(out_file, 'w') as ofile:
