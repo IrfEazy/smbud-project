@@ -1,3 +1,4 @@
+.idea/
 .DS_Store
 mongo-db/section_adder/data/*
 mongo-db/section_adder/data/Reviews.csv
