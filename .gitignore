@@ -1,5 +1,6 @@
-.idea/
-.DS_Store
+**.idea/
+**.DS_Store
+py_cleaning
 mongo-db/section_adder/data/*
 mongo-db/section_adder/data/Reviews.csv
 mongo-db/section_adder/data/sections.json
