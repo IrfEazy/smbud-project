@@ -1,0 +1,853 @@
+[
+    {
+        "index": "1",
+        "journal": "Computer Science",
+        "issn": [
+            "23007036",
+            "15082806"
+        ],
+        "publisher": "AGH University of Science and Technology"
+    },
+    {
+        "index": "2",
+        "journal": "Visualization in Engineering",
+        "issn": [
+            "22137459"
+        ],
+        "publisher": "SpringerOpen"
+    },
+    {
+        "index": "3",
+        "journal": "International journal of computer assisted radiology and surgery",
+        "issn": [
+            "18616410",
+            "18616429"
+        ],
+        "publisher": "Springer Verlag"
+    },
+    {
+        "index": "4",
+        "journal": "Visual Computing for Industry, Biomedicine, and Art",
+        "issn": [
+            "25244442",
+            "2096496X"
+        ],
+        "publisher": "Springer Science and Business Media Deutschland GmbH"
+    },
+    {
+        "index": "5",
+        "journal": "Parallel Computing",
+        "issn": [
+            "1678191"
+        ],
+        "publisher": "Elsevier"
+    },
+    {
+        "index": "6",
+        "journal": "International Journal of Software Innovation",
+        "issn": [
+            "21667179",
+            "21667160"
+        ],
+        "publisher": "IGI Global Publishing"
+    },
+    {
+        "index": "7",
+        "journal": "International Journal of Image and Graphics",
+        "issn": [
+            "02194678",
+            "17936756"
+        ],
+        "publisher": "World Scientific Publishing Co. Pte Ltd"
+    },
+    {
+        "index": "8",
+        "journal": "Journal of Gaming and Virtual Worlds",
+        "issn": [
+            "1757191X",
+            "17571928"
+        ],
+        "publisher": "Intellect Ltd."
+    },
+    {
+        "index": "9",
+        "journal": "Journal of Forensic Document Examination",
+        "issn": [
+            "08950849",
+            "26400677"
+        ],
+        "publisher": "Association of Forensic Document Examiners"
+    },
+    {
+        "index": "10",
+        "journal": "Journal of Image and Graphics(United Kingdom)",
+        "issn": [
+            "23013699"
+        ],
+        "publisher": "University of Portsmouth"
+    },
+    {
+        "index": "11",
+        "journal": "Computers and Graphics",
+        "issn": [
+            "978493"
+        ],
+        "publisher": "Elsevier Ltd."
+    },
+    {
+        "index": "12",
+        "journal": "International Journal of Computing and Digital Systems",
+        "issn": [
+            "2210142X"
+        ],
+        "publisher": "University of Bahrain"
+    },
+    {
+        "index": "13",
+        "journal": "Journal of Image and Graphics",
+        "issn": [
+            "10068961"
+        ],
+        "publisher": "Editorial and Publishing Board of JIG"
+    },
+    {
+        "index": "14",
+        "journal": "Journal of Cybersecurity",
+        "issn": [
+            "20572093"
+        ],
+        "publisher": "Oxford University Press"
+    },
+    {
+        "index": "15",
+        "journal": "Journal of Graph Algorithms and Applications",
+        "issn": [
+            "15261719"
+        ],
+        "publisher": "Brown University"
+    },
+    {
+        "index": "16",
+        "journal": "Intelligent Systems with Applications",
+        "issn": [
+            "26673053"
+        ],
+        "publisher": "Elsevier BV"
+    },
+    {
+        "index": "17",
+        "journal": "IEEE Cloud Computing",
+        "issn": [
+            "23256095"
+        ],
+        "publisher": "Institute of Electrical and Electronics Engineers Inc."
+    },
+    {
+        "index": "18",
+        "journal": "IEEE Transactions on Emerging Topics in Computing",
+        "issn": [
+            "21686750"
+        ],
+        "publisher": "IEEE Computer Society"
+    },
+    {
+        "index": "19",
+        "journal": "Technology, Knowledge and Learning",
+        "issn": [
+            "22111662",
+            "22111670"
+        ],
+        "publisher": "Springer Science + Business Media"
+    },
+    {
+        "index": "20",
+        "journal": "Pervasive and Mobile Computing",
+        "issn": [
+            "15741192"
+        ],
+        "publisher": "Elsevier"
+    },
+    {
+        "index": "21",
+        "journal": "Journal of Reliable Intelligent Environments",
+        "issn": [
+            "21994668",
+            "21994676"
+        ],
+        "publisher": "Springer International Publishing AG"
+    },
+    {
+        "index": "22",
+        "journal": "Concurrency Computation Practice and Experience",
+        "issn": [
+            "15320626",
+            "15320634"
+        ],
+        "publisher": "John Wiley and Sons Ltd"
+    },
+    {
+        "index": "23",
+        "journal": "Journal of Wireless Mobile Networks, Ubiquitous Computing, and Dependable Applications",
+        "issn": [
+            "20935382",
+            "20935374"
+        ],
+        "publisher": "Innovative Information Science & Technology Research Group (ISYOU)"
+    },
+    {
+        "index": "24",
+        "journal": "Journal of Information and Telecommunication",
+        "issn": [
+            "24751847",
+            "24751839"
+        ],
+        "publisher": "Taylor and Francis Ltd."
+    },
+    {
+        "index": "25",
+        "journal": "Journal of Internet Services and Information Security",
+        "issn": [
+            "21822077",
+            "21822069"
+        ],
+        "publisher": "Innovative Information Science and Technology Research Group"
+    },
+    {
+        "index": "26",
+        "journal": "International Journal of Cloud Computing",
+        "issn": [
+            "20439997",
+            "20439989"
+        ],
+        "publisher": "Inderscience Enterprises Ltd."
+    },
+    {
+        "index": "27",
+        "journal": "Journal of Computer Science and Technology(Argentina)",
+        "issn": [
+            "16666046",
+            "16666038"
+        ],
+        "publisher": "Facultad de Informatica, Universidad Nacional de La Plata"
+    },
+    {
+        "index": "28",
+        "journal": "Computer-Aided Civil and Infrastructure Engineering",
+        "issn": [
+            "14678667",
+            "10939687"
+        ],
+        "publisher": "Wiley-Blackwell Publishing Ltd"
+    },
+    {
+        "index": "29",
+        "journal": "IEEE Robotics and Automation Letters",
+        "issn": [
+            "23773766"
+        ],
+        "publisher": "Institute of Electrical and Electronics Engineers Inc."
+    },
+    {
+        "index": "30",
+        "journal": "Journal of Cheminformatics",
+        "issn": [
+            "17582946"
+        ],
+        "publisher": "Chemistry Central"
+    },
+    {
+        "index": "31",
+        "journal": "Structural and Multidisciplinary Optimization",
+        "issn": [
+            "16151488",
+            "1615147X"
+        ],
+        "publisher": "Springer Verlag"
+    },
+    {
+        "index": "32",
+        "journal": "IEEE Transactions on Human-Machine Systems",
+        "issn": [
+            "21682291"
+        ],
+        "publisher": "IEEE Systems, Man, and Cybernetics Society"
+    },
+    {
+        "index": "33",
+        "journal": "Journal of Mechanical Design, Transactions Of the ASME",
+        "issn": [
+            "10500472"
+        ],
+        "publisher": "The American Society of Mechanical Engineers(ASME)"
+    },
+    {
+        "index": "34",
+        "journal": "CAD Computer Aided Design",
+        "issn": [
+            "104485"
+        ],
+        "publisher": "Elsevier Ltd."
+    },
+    {
+        "index": "35",
+        "journal": "Dynamic Games and Applications",
+        "issn": [
+            "21530785",
+            "21530793"
+        ],
+        "publisher": "Springer Science + Business Media"
+    },
+    {
+        "index": "36",
+        "journal": "IEEE/ACM International Conference on Computer-Aided Design, Digest of Technical Papers",
+        "issn": [
+            "10923152"
+        ],
+        "publisher": "Institute of Electrical and Electronics Engineers Inc."
+    },
+    {
+        "index": "37",
+        "journal": "Journal on Computing and Cultural Heritage",
+        "issn": [
+            "15564711",
+            "15564673"
+        ],
+        "publisher": "Association for Computing Machinery (ACM)"
+    },
+    {
+        "index": "38",
+        "journal": "Journal of Computing and Information Science in Engineering",
+        "issn": [
+            "15309827"
+        ],
+        "publisher": "The American Society of Mechanical Engineers(ASME)"
+    },
+    {
+        "index": "39",
+        "journal": "International Journal of RF and Microwave Computer-Aided Engineering",
+        "issn": [
+            "1099047X",
+            "10964290"
+        ],
+        "publisher": "John Wiley & Sons Inc."
+    },
+    {
+        "index": "40",
+        "journal": "ACM Transactions on Design Automation of Electronic Systems",
+        "issn": [
+            "10844309",
+            "15577309"
+        ],
+        "publisher": "Association for Computing Machinery (ACM)"
+    },
+    {
+        "index": "41",
+        "journal": "Multimodal Technologies and Interaction",
+        "issn": [
+            "24144088"
+        ],
+        "publisher": "MDPI AG"
+    },
+    {
+        "index": "42",
+        "journal": "Journal of Computer and Systems Sciences International",
+        "issn": [
+            "10642307",
+            "15556530"
+        ],
+        "publisher": "Pleiades Publishing"
+    },
+    {
+        "index": "43",
+        "journal": "CCF Transactions on Pervasive Computing and Interaction",
+        "issn": [
+            "25245228"
+        ],
+        "publisher": "Springer Verlag"
+    },
+    {
+        "index": "44",
+        "journal": "International Journal of Computers and Applications",
+        "issn": [
+            "1206212X"
+        ],
+        "publisher": "Taylor and Francis Ltd."
+    },
+    {
+        "index": "45",
+        "journal": "International Journal of Architectural Computing",
+        "issn": [
+            "14780771"
+        ],
+        "publisher": "SAGE Publications Inc."
+    },
+    {
+        "index": "46",
+        "journal": "Information Technologies and International Development",
+        "issn": [
+            "15447529",
+            "15447537"
+        ],
+        "publisher": "USC Annenberg School for Communication & Journalism"
+    },
+    {
+        "index": "47",
+        "journal": "Journal of Information Systems and Telecommunication",
+        "issn": [
+            "23221437",
+            "23452773"
+        ],
+        "publisher": "Iranian Academic Center for Education, Culture and Research"
+    },
+    {
+        "index": "48",
+        "journal": "Artnodes",
+        "issn": [
+            "16955951"
+        ],
+        "publisher": "Fundacio per la Universitat Oberta de Catalunya"
+    },
+    {
+        "index": "49",
+        "journal": "South African Computer Journal",
+        "issn": [
+            "10157999",
+            "23137835"
+        ],
+        "publisher": null
+    },
+    {
+        "index": "50",
+        "journal": "Moving Image Review and Art Journal",
+        "issn": [
+            "20456301",
+            "20456298"
+        ],
+        "publisher": "Intellect Ltd."
+    },
+    {
+        "index": "51",
+        "journal": "Chinese Journal on Internet of Things",
+        "issn": [
+            "20963750"
+        ],
+        "publisher": "Beijing Xintong Media Co., Ltd."
+    },
+    {
+        "index": "52",
+        "journal": "International Journal of Interactive Multimedia and Artificial Intelligence",
+        "issn": [
+            "19891660"
+        ],
+        "publisher": "Universidad Internacional de la Rioja"
+    },
+    {
+        "index": "53",
+        "journal": "Proceedings of the ACM on Computer Graphics and Interactive Techniques",
+        "issn": [
+            "25776193"
+        ],
+        "publisher": "Association for Computing Machinery (ACM)"
+    },
+    {
+        "index": "54",
+        "journal": "Nature Machine Intelligence",
+        "issn": [
+            "25225839"
+        ],
+        "publisher": "Springer Nature Switzerland AG"
+    },
+    {
+        "index": "55",
+        "journal": "Medical Image Analysis",
+        "issn": [
+            "13618415",
+            "13618423"
+        ],
+        "publisher": "Elsevier"
+    },
+    {
+        "index": "56",
+        "journal": "IEEE Transactions on Visualization and Computer Graphics",
+        "issn": [
+            "10772626"
+        ],
+        "publisher": "IEEE Computer Society"
+    },
+    {
+        "index": "57",
+        "journal": "Computer Graphics Forum",
+        "issn": [
+            "01677055",
+            "14678659"
+        ],
+        "publisher": "Wiley-Blackwell Publishing Ltd"
+    },
+    {
+        "index": "58",
+        "journal": "Computational Visual Media",
+        "issn": [
+            "20960662",
+            "20960433"
+        ],
+        "publisher": "Tsinghua University Press"
+    },
+    {
+        "index": "59",
+        "journal": "CAAI Transactions on Intelligence Technology",
+        "issn": [
+            "24686557",
+            "24682322"
+        ],
+        "publisher": "John Wiley & Sons Inc."
+    },
+    {
+        "index": "60",
+        "journal": "Computerized Medical Imaging and Graphics",
+        "issn": [
+            "18790771",
+            "08956111"
+        ],
+        "publisher": "Elsevier Ltd."
+    },
+    {
+        "index": "61",
+        "journal": "Visual Informatics",
+        "issn": [
+            "25432656",
+            "2468502X"
+        ],
+        "publisher": "Elsevier BV"
+    },
+    {
+        "index": "62",
+        "journal": "Journal of Computational Design and Engineering",
+        "issn": [
+            "22885048",
+            "22884300"
+        ],
+        "publisher": "Oxford University Press"
+    },
+    {
+        "index": "63",
+        "journal": "Virtual Reality",
+        "issn": [
+            "13594338"
+        ],
+        "publisher": "Springer London"
+    },
+    {
+        "index": "64",
+        "journal": "Journal of Imaging",
+        "issn": [
+            "2313433X"
+        ],
+        "publisher": "Multidisciplinary Digital Publishing Institute (MDPI)"
+    },
+    {
+        "index": "65",
+        "journal": "Visual Computer",
+        "issn": [
+            "14322315",
+            "01782789"
+        ],
+        "publisher": "Springer Verlag"
+    },
+    {
+        "index": "66",
+        "journal": "International Journal of Computer Games Technology",
+        "issn": [
+            "16877047",
+            "16877055"
+        ],
+        "publisher": "Hindawi Publishing Corporation"
+    },
+    {
+        "index": "67",
+        "journal": "Conference on Human Factors in Computing Systems - Proceedings",
+        "issn": [
+            "-"
+        ],
+        "publisher": null
+    },
+    {
+        "index": "68",
+        "journal": "Computers and Graphics: X",
+        "issn": [
+            "25901486"
+        ],
+        "publisher": "Elsevier Ltd."
+    },
+    {
+        "index": "69",
+        "journal": "Cyber-Physical Systems",
+        "issn": [
+            "23335785"
+        ],
+        "publisher": "Taylor and Francis Ltd."
+    },
+    {
+        "index": "70",
+        "journal": "Spatial Cognition and Computation",
+        "issn": [
+            "13875868"
+        ],
+        "publisher": "Taylor and Francis Ltd."
+    },
+    {
+        "index": "71",
+        "journal": "Pattern Recognition and Image Analysis",
+        "issn": [
+            "15556212",
+            "10546618"
+        ],
+        "publisher": "Pleiades Publishing"
+    },
+    {
+        "index": "72",
+        "journal": "International Journal of Software Engineering and Knowledge Engineering",
+        "issn": [
+            "2181940"
+        ],
+        "publisher": "World Scientific Publishing Co. Pte Ltd"
+    },
+    {
+        "index": "73",
+        "journal": "Jisuanji Xuebao/Chinese Journal of Computers",
+        "issn": [
+            "2544164"
+        ],
+        "publisher": "Science Press"
+    },
+    {
+        "index": "74",
+        "journal": "Body, Space and Technology",
+        "issn": [
+            "14709120"
+        ],
+        "publisher": "Open Library of Humanities"
+    },
+    {
+        "index": "75",
+        "journal": "Radioelectronic and Computer Systems",
+        "issn": [
+            "26632012",
+            "18144225"
+        ],
+        "publisher": "National Aerospace University Kharkiv Aviation Institute"
+    },
+    {
+        "index": "76",
+        "journal": "ACM International Conference Proceeding Series",
+        "issn": [
+            "-"
+        ],
+        "publisher": "Association for Computing Machinery (ACM)"
+    },
+    {
+        "index": "77",
+        "journal": "Digital Creativity",
+        "issn": [
+            "17443806",
+            "14626268"
+        ],
+        "publisher": "Taylor and Francis Ltd."
+    },
+    {
+        "index": "78",
+        "journal": "International Journal of Serious Games",
+        "issn": [
+            "23848766"
+        ],
+        "publisher": "Serious Games Society"
+    },
+    {
+        "index": "79",
+        "journal": "International Journal of Advanced Technology and Engineering Exploration",
+        "issn": [
+            "23945443",
+            "23947454"
+        ],
+        "publisher": "Accent Social and Welfare Society"
+    },
+    {
+        "index": "80",
+        "journal": "Machine Graphics and Vision",
+        "issn": [
+            "12300535"
+        ],
+        "publisher": "Polska Akademia Nauk"
+    },
+    {
+        "index": "81",
+        "journal": "International Journal of Asia Digital Art and Design",
+        "issn": [
+            "21897441",
+            "17388074"
+        ],
+        "publisher": "Asia Digital Art and Design Association"
+    },
+    {
+        "index": "82",
+        "journal": "Virtual Creativity",
+        "issn": [
+            "23979712"
+        ],
+        "publisher": "Intellect Ltd."
+    },
+    {
+        "index": "83",
+        "journal": "RAIRO - Operations Research",
+        "issn": [
+            "12903868",
+            "03990559"
+        ],
+        "publisher": "EDP Sciences"
+    },
+    {
+        "index": "84",
+        "journal": "ACM Computing Surveys",
+        "issn": [
+            "03600300",
+            "15577341"
+        ],
+        "publisher": "Association for Computing Machinery (ACM)"
+    },
+    {
+        "index": "85",
+        "journal": "Computer Science Review",
+        "issn": [
+            "15740137"
+        ],
+        "publisher": "Elsevier Ireland Ltd"
+    },
+    {
+        "index": "86",
+        "journal": "Artificial Intelligence in Agriculture",
+        "issn": [
+            "25897217"
+        ],
+        "publisher": "KeAi Communications Co."
+    },
+    {
+        "index": "87",
+        "journal": "Information Sciences",
+        "issn": [
+            "200255"
+        ],
+        "publisher": "Elsevier Inc."
+    },
+    {
+        "index": "88",
+        "journal": "Internet of Things (Netherlands)",
+        "issn": [
+            "25426605"
+        ],
+        "publisher": "Elsevier BV"
+    },
+    {
+        "index": "89",
+        "journal": "Integrated Computer-Aided Engineering",
+        "issn": [
+            "10692509",
+            "18758835"
+        ],
+        "publisher": "IOS Press BV"
+    },
+    {
+        "index": "90",
+        "journal": "Designs, Codes, and Cryptography",
+        "issn": [
+            "09251022",
+            "15737586"
+        ],
+        "publisher": "Springer Netherlands"
+    },
+    {
+        "index": "91",
+        "journal": "Inverse Problems",
+        "issn": [
+            "2665611"
+        ],
+        "publisher": "IOP Publishing Ltd."
+    },
+    {
+        "index": "92",
+        "journal": "Journal of Computational Science",
+        "issn": [
+            "18777503"
+        ],
+        "publisher": "Elsevier"
+    },
+    {
+        "index": "93",
+        "journal": "Algorithmica",
+        "issn": [
+            "14320541",
+            "01784617"
+        ],
+        "publisher": "Springer New York"
+    },
+    {
+        "index": "94",
+        "journal": "Genetic Programming and Evolvable Machines",
+        "issn": [
+            "13892576",
+            "15737632"
+        ],
+        "publisher": "Springer New York"
+    },
+    {
+        "index": "95",
+        "journal": "Frontiers of Computer Science",
+        "issn": [
+            "20952228",
+            "20952236"
+        ],
+        "publisher": "Higher Education Press"
+    },
+    {
+        "index": "96",
+        "journal": "International Journal of Bio-Inspired Computation",
+        "issn": [
+            "17580374",
+            "17580366"
+        ],
+        "publisher": "Inderscience Publishers"
+    },
+    {
+        "index": "97",
+        "journal": "ACM Transactions on Computational Logic",
+        "issn": [
+            "15293785",
+            "1557945X"
+        ],
+        "publisher": "Association for Computing Machinery (ACM)"
+    },
+    {
+        "index": "98",
+        "journal": "International Journal of Systems Science",
+        "issn": [
+            "00207721",
+            "14645319"
+        ],
+        "publisher": "Taylor and Francis Ltd."
+    },
+    {
+        "index": "99",
+        "journal": "International Journal of General Systems",
+        "issn": [
+            "03081079",
+            "15635104"
+        ],
+        "publisher": "Taylor and Francis Ltd."
+    },
+    {
+        "index": "100",
+        "journal": "Logical Methods in Computer Science",
+        "issn": [
+            "18605974"
+        ],
+        "publisher": "Technischen Universitat Braunschweig"
+    }
+]
