@@ -1,5 +1,5 @@
-# Section Adder
-Adds an array of sections object to the papers dataset  
+# Global cleaner
+Applies all the cleaning operation emerged in neo4j and MongoDB
 
 ## Dependency
 Run this script with python3  

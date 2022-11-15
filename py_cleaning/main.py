@@ -6,6 +6,7 @@ import publisher
 import location
 import regx
 import keyword_fos_clean.clean_keyword_fos as clean_keyword_fos
+import keyword_fos_clean.extractAddVenue as venue_modifier
 import section_adder.section_adder as section_adder
 import section_adder.author as author
 
@@ -36,6 +37,8 @@ def clean():
     print("Publishers added")
     location.location_adder(out_file, out_file)
     print("Location added")
+    venue_modifier.extract_and_rewrite(out_file, out_file)
+    print("Venue extracted and rewritten")
 
     print("Adding sections and authors (MongoDB part)")
     section_adder.add_sections(out_file, out_file)
