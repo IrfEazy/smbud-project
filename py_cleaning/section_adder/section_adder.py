@@ -6,7 +6,7 @@ import os.path
 # Starting from depth 0
 BASE_DEPTH = 0
 MAX_SECTION_DEPTH = 1
-MAX_SUBSECTION = 5
+MAX_SUBSECTIONS = 5
 MAX_SECTIONS = 10
 
 MAX_PAR = 5
@@ -42,8 +42,11 @@ def add_sections(in_file, out_file=None):
         raise Exception("Too few sections")
 
     for paper in paper_dataset:
-        indx = RAND_SECTIONS.randint(0, len(sections_data))
-        sections = [sections_data[indx] for i in range(RAND_SECTIONS.randint(min_sections, max_sections))]
+        sections = []
+        for i in range(RAND_SECTIONS.randint(min_sections, max_sections)):
+            indx = RAND_SECTIONS.randint(0, len(sections_data))
+            sections.append(sections_data[indx])
+
         paper['sections'] = sections
 
     with open(out_file, 'w') as ofile:
@@ -102,7 +105,7 @@ def create_section(csv_iterator, urls, captions, level, max_depth):
 
         if level < max_depth:
             subsections = []
-            for i in range(RAND_SUBSECTIONS.randint(1,MAX_SUBSECTION)):
+            for i in range(RAND_SUBSECTIONS.randint(1, MAX_SUBSECTIONS)):
                 subsections.append(create_section(csv_iterator, urls, captions, level + 1, max_depth))
 
             section['subsections'] = subsections
