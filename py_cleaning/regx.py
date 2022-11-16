@@ -6,7 +6,8 @@ def rm_incorrect_issn(ifile_nm, ofile_nm):
         nw_lines = []
         for line in ifile.readlines():
             line = re.sub(r'NumberInt\(([0-9]+)\)', r'\1', line)
-            line = re.sub(r'(page_start|page_end): 0+([1-9][0-9]*)', r'\1: \2', line)
+            line = re.sub(r'"(page_start|page_end|volume|issue)": "([0-9]*)"', r'"\1": \2', line)
+            line = re.sub(r'"(page_start|page_end)": 0+([1-9][0-9]*)', r'"\1": \2', line)
             match = re.search(r'"issn"[ ]*:[ ]*"(?![0-9]{4}-[0-9]{4}")', line)
             if match:
                 # if it matches, then the lookahead is not considered, and we close the
