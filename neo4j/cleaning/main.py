@@ -1,13 +1,14 @@
-import keywords
-import references
 import sys
-import type
-import publisher
+
+import keywords
 import location
+import publisher
+import references
 import regx
+import type
+
 
 def clean():
-
     in_file = 'data/orig_prova.json'
     out_file = 'data/out.json'
 
@@ -32,4 +33,3 @@ def clean():
 
 if __name__ == '__main__':
     clean()
-

@@ -1,8 +1,8 @@
 # Author: Irfan Cela
 
 import json
-import re
 import os
+import re
 
 
 def clean(in_file, out_file=None):
@@ -18,13 +18,15 @@ def clean(in_file, out_file=None):
     dblp = json.load(dataset)
 
     for node in dblp:
-        if 'doi' in node and 'keywords' in node and 'fos' in node and node['doi'] and node['keywords'] and node['fos'] and \
+        if 'doi' in node and 'keywords' in node and 'fos' in node and node['doi'] and node['keywords'] and node[
+            'fos'] and \
                 node['doi'] != 'null':
             last = node
 
     # Iterating through the json list
     for node in dblp:
-        if 'doi' in node and 'keywords' in node and 'fos' in node and node['doi'] and node['keywords'] and node['fos'] and \
+        if 'doi' in node and 'keywords' in node and 'fos' in node and node['doi'] and node['keywords'] and node[
+            'fos'] and \
                 node['doi'] != 'null':
             cleanedKeywords = []
             for keyword in node['keywords']:

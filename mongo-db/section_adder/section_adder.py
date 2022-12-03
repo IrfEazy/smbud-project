@@ -1,8 +1,10 @@
-import json
 import csv
-import numpy as np
+import json
 import os.path
 import sys
+
+import numpy as np
+
 import author
 
 # Starting from depth 0
@@ -38,7 +40,7 @@ def add_sections(in_file, out_file=None):
         paper_dataset = json.load(i_file)
 
     # Integer division
-    max_sections = MAX_SECTIONS 
+    max_sections = MAX_SECTIONS
     min_sections = max_sections // 2
     if min_sections < 1:
         raise Exception("Too few sections")
@@ -57,10 +59,10 @@ def create_sections():
     with open(REVIEWS_FILE) as f:
         csv_data = csv.DictReader(f)
         csv_data_iter = csv_data.__iter__()
-    
+
         with open(URL_FILE) as url_f:
             url_data = json.load(url_f)
-        
+
         with open(CAPTION_FILE) as caption_f:
             caption_data = json.load(caption_f)
 
@@ -92,7 +94,7 @@ def create_section(csv_iterator, urls, captions, level, max_depth):
 
         section['paragraphs'] = paras
 
-        num_figures = RAND_PAR.randint(1, num_paras+1)
+        num_figures = RAND_PAR.randint(1, num_paras + 1)
         figures = []
         for i in range(num_figures):
             index = np.random.randint(len(urls))
@@ -104,7 +106,7 @@ def create_section(csv_iterator, urls, captions, level, max_depth):
 
         if level < max_depth:
             subsections = []
-            for i in range(RAND_SUBSECTIONS.randint(1,MAX_SUBSECTION)):
+            for i in range(RAND_SUBSECTIONS.randint(1, MAX_SUBSECTION)):
                 subsections.append(create_section(csv_iterator, urls, captions, level + 1, max_depth))
 
             section['subsections'] = subsections

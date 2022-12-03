@@ -1,4 +1,5 @@
 import json
+
 import numpy as np
 
 lim = 1000  # max numero di keywords
@@ -69,13 +70,12 @@ def extract_rand_keywords(fos_kw_map, foss):
         candidates += [kword for kword in fos_kw_map[fos] if kword not in candidates]
 
     if len(candidates) > 1:
-        #print(candidates, max_kwords_paper, len(candidates))
+        # print(candidates, max_kwords_paper, len(candidates))
         candidates = np.random.choice(candidates, np.random.randint(1, min(max_kwords_paper, len(candidates))))
         # remove duplicates
         return list(dict.fromkeys(candidates))
     else:
         return []
-
 
 # type.typeAdder(filename)
 # modifyJSONmain.addReferences(filename, filename)

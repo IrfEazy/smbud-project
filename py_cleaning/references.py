@@ -1,5 +1,6 @@
 # Sample array of references
 import json
+
 import numpy as np
 
 max_ref_count = 10
@@ -29,4 +30,3 @@ def addReferences(in_file, out_file):
 
     with open(f2, 'w') as out:
         out.write(json.dumps(data, indent=4))
-

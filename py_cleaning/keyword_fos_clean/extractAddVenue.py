@@ -27,5 +27,3 @@ def extract_and_rewrite(in_file, out_file=None):
 
     with open(out_file, 'w') as jsonF:
         jsonF.write(json.dumps(values, indent=4))
-
-

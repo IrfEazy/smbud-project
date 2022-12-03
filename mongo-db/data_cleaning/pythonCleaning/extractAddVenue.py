@@ -21,5 +21,3 @@ for element in values:
 
 with open('addVenue.json', 'w') as jsonF:
     jsonF.write(json.dumps(values, indent=4))
-
-

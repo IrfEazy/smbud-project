@@ -1,5 +1,7 @@
+import json
+import re
 import xml.etree.ElementTree as ET
-import re, json
+
 
 def addPublishers(in_file, out_file):
     references = []
@@ -18,7 +20,7 @@ def addPublishers(in_file, out_file):
         for td in tr.iter('td'):
             if i == 0:
                 dic['index'] = td.text
-            elif i ==1:
+            elif i == 1:
                 for a in td.iter('a'):
                     dic['journal'] = a.text
             elif i == 2:

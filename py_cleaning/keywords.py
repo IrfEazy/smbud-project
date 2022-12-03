@@ -1,11 +1,11 @@
 import json
+
 import numpy as np
 
 FOS_KEYWORDS_MAP_JSON = 'data/fos-keywords.json'
 
 lim = 1000  # max numero di keywords
 max_kwords_paper = 10  # max number of keywords per paper
-
 
 filename = 'data/orig_prova.json'
 

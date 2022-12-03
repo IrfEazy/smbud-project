@@ -1,18 +1,17 @@
-import keywords
-import references
 import sys
-import type
-import publisher
-import location
-import regx
+
 import keyword_fos_clean.clean_keyword_fos as clean_keyword_fos
 import keyword_fos_clean.extractAddVenue as venue_modifier
-import section_adder.section_adder as section_adder
+import location
+import publisher
+import references
+import regx
 import section_adder.author as author
+import section_adder.section_adder as section_adder
+import type
 
 
 def clean():
-
     if sys.argv is not None and len(sys.argv) > 1:
         if sys.argv[1] is not None:
             in_file = out_file = sys.argv[1]
@@ -27,8 +26,8 @@ def clean():
     print("Incorrect ISSN removed")
     clean_keyword_fos.clean(out_file, out_file)
     print("Keyword cleaning done")
-    #keywords.fos_keywords_adder(out_file, out_file)
-    #print("Keyword added")
+    # keywords.fos_keywords_adder(out_file, out_file)
+    # print("Keyword added")
     references.addReferences(out_file, out_file)
     print("References created")
     type.typeAdder(out_file, out_file)
@@ -49,4 +48,3 @@ def clean():
 
 if __name__ == '__main__':
     clean()
-

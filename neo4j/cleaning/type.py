@@ -6,16 +6,17 @@ def checkBook(data):
         if data["isbn"] != "" and data["isbn"] is not None:
             data["publication_type"] = "Book"
             return True
-    except: 
+    except:
         return False
 
 
 def checkJournal(data):
     try:
-        if (data["volume"] != "" and data["volume"] is not None) or (data["issue"] != "" and data["issue"] is not None) or (data["issn"] != "" and data["issn"] is not None):
+        if (data["volume"] != "" and data["volume"] is not None) or (
+                data["issue"] != "" and data["issue"] is not None) or (data["issn"] != "" and data["issn"] is not None):
             data["publication_type"] = "Journal"
             return True
-    except: 
+    except:
         return False
 
 
@@ -34,13 +35,3 @@ def typeAdder(in_file, out_file):
         json.dump(data, f, indent=4)
 
     print("done ", count)
-
-
-
-
-
-
-
-
-
-
