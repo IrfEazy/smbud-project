@@ -3,6 +3,7 @@
 **__pycache__/
 **node_modules/
 **out/
+**.ipynb_checkpoints/
 latex/out/
 !latex/out/
 latex/out/*
