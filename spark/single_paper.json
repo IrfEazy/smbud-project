@@ -1,0 +1,102 @@
+{
+        "_id": "53e9999eb7602d97021e0637",
+        "title": "Performance evaluation at the system level of reconfigurable space-time coding techniques for HSDPA",
+        "authors": [
+            {
+                "_id": "53f434c1dabfaeb2ac043e9f",
+                "name": "Kostas Peppas",
+                "org": "Institute of Communication and Computer Systems, National Technical University of Athens, Heroon Polytechniou, Zografou, Athens, Greece",
+                "email": "kostas.peppas9f@gmail.com",
+                "gid": "5b86b95de1cd8e14a35f80ed",
+                "orgid": "5f71b2d11c455f439fe3e77b",
+                "bio": "My name is Kostas Peppas and I'm currently working for Institute of Communication and Computer Systems, National Technical University of Athens, Heroon Polytechniou, Zografou, Athens, Greece"
+            },
+            {
+                "_id": "54092921dabfae92b425e990",
+                "name": "Angeliki Alexiou",
+                "org": "Wireless Research, Bell Labs., Lucent Technologies, The Quadrant, Stonehill Green, Swindon, UK",
+                "orgid": "5f71b2831c455f439fe3c62a",
+                "email": "angeliki.alexiou90@gmail.com",
+                "bio": "My name is Angeliki Alexiou and I'm currently working for Wireless Research, Bell Labs., Lucent Technologies, The Quadrant, Stonehill Green, Swindon, UK"
+            },
+            {
+                "_id": "53f39910dabfae4b34a868cb",
+                "name": "Fotis Lazarakis",
+                "org": "Institute of Informatics and Telecommunications, National Center for Scientific Research \"Demokritos\", Athens, Greece",
+                "gid": "5b86a599e1cd8e14a3d80a0a",
+                "orgid": "5f71b28c1c455f439fe3c9b4",
+                "email": "fotis.lazarakiscb@gmail.com",
+                "bio": "My name is Fotis Lazarakis and I'm currently working for Institute of Informatics and Telecommunications, National Center for Scientific Research \"Demokritos\", Athens, Greece"
+            },
+            {
+                "_id": "53f44a61dabfaee2a1d44c35",
+                "name": "Tareq Al-Gizawi",
+                "org": "Institute of Communication and Computer Systems, National Technical University of Athens, Heroon Polytechniou, Zografou, Athens, Greece",
+                "gid": "5b86b95de1cd8e14a35f80ed",
+                "orgid": "5f71b2d11c455f439fe3e77b",
+                "email": "tareq.al-gizawi35@gmail.com",
+                "bio": "My name is Tareq Al-Gizawi and I'm currently working for Institute of Communication and Computer Systems, National Technical University of Athens, Heroon Polytechniou, Zografou, Athens, Greece"
+            },
+            {
+                "_id": "53f45c18dabfaee43ecd0fd1",
+                "name": "Dimitrios I. Axiotis",
+                "org": "Institute of Communication and Computer Systems, National Technical University of Athens, Heroon Polytechniou, Zografou, Athens, Greece",
+                "gid": "5b86b95de1cd8e14a35f80ed",
+                "orgid": "5f71b2d11c455f439fe3e77b",
+                "email": "dimitrios.i..axiotisd1@gmail.com",
+                "bio": "My name is Dimitrios I. Axiotis and I'm currently working for Institute of Communication and Computer Systems, National Technical University of Athens, Heroon Polytechniou, Zografou, Athens, Greece"
+            }
+        ],
+        "keywords": [
+            "system level performance",
+            "system level",
+            "conventional counterpart",
+            "average system throughput",
+            "reconfigurable space time",
+            "performance enhancement",
+            "performance evaluation",
+            "channel correlation matrix",
+            "proposed reconfigurable technique",
+            "antenna correlation",
+            "reconfigurable technique",
+            "performance metrics",
+            "space time code"
+        ],
+        "fos": [
+            "reconfigurability",
+            "computer science",
+            "link level",
+            "network packet",
+            "block code",
+            "communication channel",
+            "real time computing",
+            "packet switching",
+            "throughput",
+            "computer engineering",
+            "telecommunications link"
+        ],
+        "page_start": 1656,
+        "page_end": 1667,
+        "lang": "en",
+        "issue": 11,
+        "issn": "1687-6180",
+        "doi": "10.1155/ASP.2005.1656",
+        "url": [
+            "http://dx.doi.org/10.1155/ASP.2005.1656",
+            "https://link.springer.com/10.1155/ASP.2005.1656",
+            "http://www.webofknowledge.com/"
+        ],
+        "abstract": "A reconfigurable space-time coding technique is investigated, for a high-speed downlink packet access multiple-antenna network, which combats the effects of antenna correlation. Reconfigurability is achieved at the link level by introducing a linear precoder in a space-time block coded system. The technique assumes knowledge of the long-term characteristics of the channel, namely the channel correlation matrix at the transmitter. The benefits of the proposed reconfigurable technique as compared to the conventional non-reconfigurable versions are evaluated via system-level simulations. In order to characterize the system-level performance accurately and, at the same time, use a feasible approach in terms of computational complexity, a suitable link-to-system interface has been developed. The average system throughput and the number of satisfied users are the performance metrics of interest. Simulation results demonstrate the performance enhancements achieved by the application of reconfigurable techniques as compared to their conventional counterparts.",
+        "references": [
+            "53e9b47cb7602d9703f7e3f1",
+            "53e99f27b7602d97027f237d",
+            "53e99931b7602d9702171580",
+            "53e9b53bb7602d970407232d",
+            "53e99884b7602d97020bca3f",
+            "53e9b181b7602d9703c0c197"
+        ],
+        "publication_type": "Journal",
+        "publisher": "Accent Social and Welfare Society",
+        "venue": "EURASIP J. Adv. Sig. Proc.",
+        "date": "1998-07-15T04:56:20.000Z"
+    }
