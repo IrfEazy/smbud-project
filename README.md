@@ -1,5 +1,4 @@
-# smbud-project
-Project - System and Methods for Big and Unstructured Data [PoliMi]
+# Project - System and Methods for Big and Unstructured Data
 
 ### Group members
 * Cela Irfan [10694934] - irfan.cela@mail.polimi.it
