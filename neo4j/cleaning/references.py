@@ -1,12 +1,12 @@
 # Sample array of references
-import json
+from json import load, dumps
 
-import numpy as np
+from numpy import random
 
 max_ref_count = 10
 
 
-def addReferences(in_file, out_file):
+def add_references(in_file, out_file):
     references = []
 
     # Open JSON file
@@ -14,19 +14,19 @@ def addReferences(in_file, out_file):
     f2 = out_file
 
     # Return json object as a dictionary
-    data = json.load(f)
+    data = load(f)
 
     for i in data:
         if '_id' in i:
             references.append(i['_id'])
 
     for i in data:
-        if 'references' not in i and np.random.randint(0, 15) != 0:
-            refs = list(set(list(np.random.choice(references, np.random.randint(0, max_ref_count)))))
+        if 'references' not in i and random.randint(0, 15) != 0:
+            refs = list(set(list(random.choice(references, random.randint(0, max_ref_count)))))
             if i['_id'] in refs:
                 refs.remove(i['_id'])
 
             i['references'] = refs
 
     with open(f2, 'w') as out:
-        out.write(json.dumps(data, indent=4))
+        out.write(dumps(data, indent=4))

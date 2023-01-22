@@ -1,5 +1,5 @@
-import json
-import re
+from json import load, dump
+from re import split
 
 # Opening JSON file
 dataset = open('data/test.json')
@@ -8,7 +8,7 @@ filteredFile.write('[')
 filteredFile.close()
 
 # returns JSON object as a dictionary
-dblp = json.load(dataset)
+dblp = load(dataset)
 
 for node in dblp:
     if 'doi' in node and 'keywords' in node and 'fos' in node and node['doi'] and node['keywords'] and node['fos'] and \
@@ -22,14 +22,14 @@ for node in dblp:
         cleanedKeywords = []
         for keyword in node['keywords']:
             cleanedString = ''
-            for word in re.split(r'\W+', keyword.lower()):
+            for word in split(r'\W+', keyword.lower()):
                 cleanedString = cleanedString + word + ' '
             cleanedKeywords.append(cleanedString.strip())
         node['keywords'] = cleanedKeywords
         cleanedFos = []
         for fos in node['fos']:
             cleanedString = ''
-            for word in re.split(r'\W+', fos.lower()):
+            for word in split(r'\W+', fos.lower()):
                 cleanedString = cleanedString + word + ' '
             cleanedFos.append(cleanedString.strip())
         node['fos'] = cleanedFos
@@ -40,7 +40,7 @@ for node in dblp:
         else:
             node['publication_type'] = "Conference"
         with open('filtered.json', 'a', encoding='utf-8') as filteredFile:
-            json.dump(node, filteredFile, ensure_ascii=False, indent=4)
+            dump(node, filteredFile, ensure_ascii=False, indent=4)
             if node != last:
                 filteredFile.write(',')
 

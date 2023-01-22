@@ -1,9 +1,9 @@
-import json
+from json import load, dump
 
-import numpy as np
+from numpy import random
 
-lim = 1000  # max numero di keywords
-max_kwords_paper = 10  # max number of keywords per paper
+lim = 1000  # max keyword number
+max_kwords_paper = 10  # max keyword number per paper
 
 # filename = sys.argv[1]
 filename = 'data/orig_prova.json'
@@ -11,7 +11,7 @@ filename = 'data/orig_prova.json'
 
 def fos_keywords_adder(in_file, out_file):
     with open(in_file) as f:
-        data = json.load(f)
+        data = load(f)
 
     fos_kw_map = {}
 
@@ -34,7 +34,7 @@ def fos_keywords_adder(in_file, out_file):
                     fos_kw_map[key] = list(dict.fromkeys(keywords))
 
     with open('data/fos-keywords.json', 'w') as kmap:
-        json.dump(fos_kw_map, kmap, indent=4)
+        dump(fos_kw_map, kmap, indent=4)
 
     # ADDING FOS AND KEYWORDS
     for j_obj in data:
@@ -49,8 +49,8 @@ def fos_keywords_adder(in_file, out_file):
                     # remove duplicates
                     dict.fromkeys(
                         # take random keys
-                        np.random.choice(
-                            list(fos_kw_map.keys()), np.random.randint(1, max_kwords_paper)
+                        random.choice(
+                            list(fos_kw_map.keys()), random.randint(1, max_kwords_paper)
                         )
                     )
                 )
@@ -61,7 +61,7 @@ def fos_keywords_adder(in_file, out_file):
                 j_obj['keywords'] += extract_rand_keywords(fos_kw_map, foss)
 
     with open(out_file, 'w') as f:
-        json.dump(data, f, indent=4)
+        dump(data, f, indent=4)
 
 
 def extract_rand_keywords(fos_kw_map, foss):
@@ -71,7 +71,7 @@ def extract_rand_keywords(fos_kw_map, foss):
 
     if len(candidates) > 1:
         # print(candidates, max_kwords_paper, len(candidates))
-        candidates = np.random.choice(candidates, np.random.randint(1, min(max_kwords_paper, len(candidates))))
+        candidates = random.choice(candidates, random.randint(1, min(max_kwords_paper, len(candidates))))
         # remove duplicates
         return list(dict.fromkeys(candidates))
     else:

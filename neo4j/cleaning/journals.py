@@ -1,16 +1,14 @@
-import json
-import re
-import xml.etree.ElementTree as ET
+from json import dump
+from re import split
+from xml.etree.ElementTree import parse
 
 
-def addPublishers(in_file, out_file):
-    references = []
-
+def add_publishers(in_file, out_file):
     # Open XML
     f = open(in_file)
 
     # Return json object as a dictionary
-    data = ET.parse(f)
+    data = parse(f)
     jdata = []
     root = data.getroot()
 
@@ -24,7 +22,7 @@ def addPublishers(in_file, out_file):
                 for a in td.iter('a'):
                     dic['journal'] = a.text
             elif i == 2:
-                issns = re.split(',', td.text)
+                issns = split(',', td.text)
                 issns = list(map(lambda x: x.strip(), issns))
                 dic['issn'] = issns
             elif i == 3:
@@ -34,7 +32,7 @@ def addPublishers(in_file, out_file):
         jdata.append(dic)
 
     with open(out_file, 'w') as f:
-        json.dump(jdata, f, indent=4)
+        dump(jdata, f, indent=4)
 
 
-addPublishers('data/jls.txt', 'data/publishers.json')
+add_publishers('data/jls.txt', 'data/publishers.json')

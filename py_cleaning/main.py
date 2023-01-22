@@ -1,48 +1,48 @@
-import sys
+from sys import argv
 
-import keyword_fos_clean.clean_keyword_fos as clean_keyword_fos
-import keyword_fos_clean.extractAddVenue as venue_modifier
-import location
-import publisher
-import references
-import regx
-import section_adder.author as author
-import section_adder.section_adder as section_adder
-import type
+from keyword_fos_clean.clean_keyword_fos import clean
+from keyword_fos_clean.extractAddVenue import extract_and_rewrite
+from location import location_adder
+from publisher import publisher_adder
+from references import add_references
+from regx import rm_incorrect_issn
+from section_adder.author import email_bio_date_adder
+from section_adder.section_adder import add_sections
+from type import type_adder
 
 
 def clean():
-    if sys.argv is not None and len(sys.argv) > 1:
-        if sys.argv[1] is not None:
-            in_file = out_file = sys.argv[1]
-        if sys.argv[2] is not None:
-            out_file = sys.argv[2]
+    if argv is not None and len(argv) > 1:
+        if argv[1] is not None:
+            in_file = out_file = argv[1]
+        if argv[2] is not None:
+            out_file = argv[2]
     else:
         print("Too few arguments. I want at least an input file")
         return
 
     print("First phase cleaning started...")
-    regx.rm_incorrect_issn(in_file, out_file)
+    rm_incorrect_issn(in_file, out_file)
     print("Incorrect ISSN removed")
-    clean_keyword_fos.clean(out_file, out_file)
+    clean(out_file, out_file)
     print("Keyword cleaning done")
     # keywords.fos_keywords_adder(out_file, out_file)
     # print("Keyword added")
-    references.addReferences(out_file, out_file)
+    add_references(out_file, out_file)
     print("References created")
-    type.typeAdder(out_file, out_file)
+    type_adder(out_file, out_file)
     print("Type added")
-    publisher.publisher_adder(out_file, out_file)
+    publisher_adder(out_file, out_file)
     print("Publishers added")
-    location.location_adder(out_file, out_file)
+    location_adder(out_file, out_file)
     print("Location added")
-    venue_modifier.extract_and_rewrite(out_file, out_file)
+    extract_and_rewrite(out_file, out_file)
     print("Venue extracted and rewritten")
 
     print("Adding sections and authors (MongoDB part)")
-    section_adder.add_sections(out_file, out_file)
+    add_sections(out_file, out_file)
     print("Sections added")
-    author.email_bio_date_adder(out_file, out_file)
+    email_bio_date_adder(out_file, out_file)
     print("Authors added")
 
 

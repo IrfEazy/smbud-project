@@ -1,19 +1,19 @@
-import json
+from json import load, dump
 
-import numpy as np
+from numpy import random
 
 DATES_FILE = 'data/random_dates.json'
 
 
 def email_bio_date_adder(in_file, out_file):
     with open(in_file) as f:
-        my_dataset = json.load(f)
+        my_dataset = load(f)
     with open(DATES_FILE) as d:
-        dates = json.load(d)
+        dates = load(d)
 
     for i in range(len(my_dataset)):
         doc = my_dataset[i]
-        doc['date'] = dates[np.random.randint(0, len(dates))]['date']
+        doc['date'] = dates[random.randint(0, len(dates))]['date']
         if 'year' in doc.keys():
             doc.pop('year')
         if 'authors' in doc.keys():
@@ -26,4 +26,4 @@ def email_bio_date_adder(in_file, out_file):
                             j].keys() else '')
 
     with open(out_file, 'w') as out:
-        json.dump(my_dataset, out, indent=4)
+        dump(my_dataset, out, indent=4)

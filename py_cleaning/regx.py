@@ -1,19 +1,19 @@
-import re
+from re import sub, search
 
 
 def rm_incorrect_issn(ifile_nm, ofile_nm):
     with open(ifile_nm) as ifile:
         nw_lines = []
         for line in ifile.readlines():
-            line = re.sub(r'NumberInt\(([0-9]+)\)', r'\1', line)
-            line = re.sub(r'"(page_start|page_end|volume|issue)": "([0-9]*)"', r'"\1": \2', line)
-            line = re.sub(r'"(page_start|page_end)": 0+([1-9][0-9]*)', r'"\1": \2', line)
-            match = re.search(r'"issn"[ ]*:[ ]*"(?![0-9]{4}-[0-9]{4}")', line)
+            line = sub(r'NumberInt\(([0-9]+)\)', r'\1', line)
+            line = sub(r'"(page_start|page_end|volume|issue)": "([0-9]*)"', r'"\1": \2', line)
+            line = sub(r'"(page_start|page_end)": 0+([1-9][0-9]*)', r'"\1": \2', line)
+            match = search(r'"issn"[ ]*:[ ]*"(?![0-9]{4}-[0-9]{4}")', line)
             if match:
                 # if it matches, then the lookahead is not considered, and we close the
                 # string with the eol, checking if it ends with , or not
                 try:
-                    eol = re.search(r'(?<=")[,]*[ \t]*$', line)
+                    eol = search(r'(?<=")[,]*[ \t]*$', line)
                     nw_lines.append(match.group() + '"' + eol.group() + '\n')
                 except:
                     print(line)

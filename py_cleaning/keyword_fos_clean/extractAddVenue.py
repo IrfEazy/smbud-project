@@ -1,20 +1,20 @@
 # Author: Bianca Christian Savoiu Marinas
 
-import json
+from json import load, dumps
 
 
 def extract_and_rewrite(in_file, out_file=None):
     if out_file is None:
         out_file = in_file
 
-    jsonFile = open(in_file, 'r')
-    values = json.load(jsonFile)
+    json_file = open(in_file, 'r')
+    values = load(json_file)
 
-    rawValues = {}
+    raw_values = {}
     i = 0
     for line in values:
         if 'venue' in line:
-            rawValues[i] = line['venue']['raw']
+            raw_values[i] = line['venue']['raw']
             i = i + 1
 
     raw = 0
@@ -22,8 +22,8 @@ def extract_and_rewrite(in_file, out_file=None):
         if 'venue' in element:
             del element['venue']
         if '_id' in element:
-            element['venue'] = rawValues[raw]
+            element['venue'] = raw_values[raw]
             raw = raw + 1
 
     with open(out_file, 'w') as jsonF:
-        jsonF.write(json.dumps(values, indent=4))
+        jsonF.write(dumps(values, indent=4))

@@ -1,7 +1,7 @@
-import json
+from json import load, dumps
 
 jsonFile = open('datasetMongo.json', 'r')
-values = json.load(jsonFile)
+values = load(jsonFile)
 
 rawValues = {}
 i = 0
@@ -20,4 +20,4 @@ for element in values:
         raw = raw + 1
 
 with open('addVenue.json', 'w') as jsonF:
-    jsonF.write(json.dumps(values, indent=4))
+    jsonF.write(dumps(values, indent=4))

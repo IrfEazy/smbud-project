@@ -1,16 +1,16 @@
-import json
+from json import load, dump
 
-import numpy as np
+from numpy import random
 
 
 # requires that the type of publication is already assigned to each paper
 # add the field publisher to all paper whose publication_type is Bool or Journal
 def publisher_adder(in_file, out_file):
     with open(in_file) as f:
-        data = json.load(f)
+        data = load(f)
 
     with open('data/publishers.json') as pub:
-        pubs = json.load(pub)
+        pubs = load(pub)
 
     publishers = []
 
@@ -18,10 +18,10 @@ def publisher_adder(in_file, out_file):
         publishers.append(pubs[i]["publisher"])
 
     for i in range(len(data)):
-        if (data[i]["publication_type"] == "Book" or data[i]["publication_type"] == "Journal"):
+        if data[i]["publication_type"] == "Book" or data[i]["publication_type"] == "Journal":
             if 'publisher' in data[i] and data[i]["publisher"] is not None and data[i]["publisher"] != "":
                 continue
-            data[i]["publisher"] = publishers[np.random.randint(0, len(publishers))]
+            data[i]["publisher"] = publishers[random.randint(0, len(publishers))]
 
     with open(out_file, 'w') as f:
-        json.dump(data, f, indent=4)
+        dump(data, f, indent=4)

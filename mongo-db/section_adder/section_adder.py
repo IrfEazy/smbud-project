@@ -1,9 +1,9 @@
-import csv
-import json
 import os.path
-import sys
+from csv import DictReader
+from json import load, dump
+from sys import argv
 
-import numpy as np
+from numpy import random
 
 import author
 
@@ -20,10 +20,10 @@ SECTIONS_FILE = 'data/sections.json'
 URL_FILE = 'data/random_image_URLs.json'
 CAPTION_FILE = 'data/random_captions.json'
 
-RAND_PAR = np.random.RandomState(672584343)
-RAND_SECTION_DEPTH = np.random.RandomState(267524343)
-RAND_SUBSECTIONS = np.random.RandomState(456742563)
-RAND_SECTIONS = np.random.RandomState(344198764)
+RAND_PAR = random.RandomState(672584343)
+RAND_SECTION_DEPTH = random.RandomState(267524343)
+RAND_SUBSECTIONS = random.RandomState(456742563)
+RAND_SECTIONS = random.RandomState(344198764)
 
 
 def add_sections(in_file, out_file=None):
@@ -34,10 +34,10 @@ def add_sections(in_file, out_file=None):
         create_sections()
 
     with open(SECTIONS_FILE) as sec_f:
-        sections_data = json.load(sec_f)
+        sections_data = load(sec_f)
 
     with open(in_file) as i_file:
-        paper_dataset = json.load(i_file)
+        paper_dataset = load(i_file)
 
     # Integer division
     max_sections = MAX_SECTIONS
@@ -51,20 +51,20 @@ def add_sections(in_file, out_file=None):
         paper['sections'] = sections
 
     with open(out_file, 'w') as ofile:
-        json.dump(paper_dataset, ofile, indent=4)
+        dump(paper_dataset, ofile, indent=4)
 
 
 def create_sections():
     json_out = []
     with open(REVIEWS_FILE) as f:
-        csv_data = csv.DictReader(f)
+        csv_data = DictReader(f)
         csv_data_iter = csv_data.__iter__()
 
         with open(URL_FILE) as url_f:
-            url_data = json.load(url_f)
+            url_data = load(url_f)
 
         with open(CAPTION_FILE) as caption_f:
-            caption_data = json.load(caption_f)
+            caption_data = load(caption_f)
 
             try:
                 while True:
@@ -74,7 +74,7 @@ def create_sections():
                 print("Sections created!")
 
     with open(SECTIONS_FILE, 'w') as ofile:
-        json.dump(json_out, ofile, indent=4)
+        dump(json_out, ofile, indent=4)
 
 
 def create_section(csv_iterator, urls, captions, level, max_depth):
@@ -97,7 +97,7 @@ def create_section(csv_iterator, urls, captions, level, max_depth):
         num_figures = RAND_PAR.randint(1, num_paras + 1)
         figures = []
         for i in range(num_figures):
-            index = np.random.randint(len(urls))
+            index = random.randint(len(urls))
             figures.append({"URL": urls[index]['image_URL'], "caption": captions[index]['caption']})
 
         section['figures'] = figures
@@ -116,11 +116,11 @@ def create_section(csv_iterator, urls, captions, level, max_depth):
         raise StopIteration
 
 
-if sys.argv is not None and len(sys.argv) > 1:
-    if sys.argv[1] is not None:
-        out_file = in_file = sys.argv[1]
-    if sys.argv[2] is not None:
-        out_file = sys.argv[2]
+if argv is not None and len(argv) > 1:
+    if argv[1] is not None:
+        out_file = in_file = argv[1]
+    if argv[2] is not None:
+        out_file = argv[2]
 
     add_sections(in_file, out_file)
     author.email_bio_date_adder(out_file, out_file)

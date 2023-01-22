@@ -1,13 +1,13 @@
-import json
+from json import load, dump
 
-import numpy as np
+from numpy import random
 
 
 # requires that the type of publication is already assigned to each paper
 # add the field location to all paper whose publication_type is Conference
 def location_adder(in_file, out_file):
     with open(in_file) as f:
-        data = json.load(f)
+        data = load(f)
 
     locations = ["London, UK",
                  "New York, USA",
@@ -60,7 +60,7 @@ def location_adder(in_file, out_file):
 
     for i in range(len(data)):
         if data[i]["publication_type"] == "Conference":
-            data[i]["location"] = locations[np.random.randint(0, len(locations))]
+            data[i]["location"] = locations[random.randint(0, len(locations))]
 
     with open(out_file, 'w') as f:
-        json.dump(data, f, indent=4)
+        dump(data, f, indent=4)
