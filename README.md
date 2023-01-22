@@ -23,7 +23,6 @@
 [![Stargazers](https://img.shields.io/github/stars/IrfEazy/smbud-project.svg?style=for-the-badge)](https://github.com/IrfEazy/smbud-project/stargazers)
 [![Issues](https://img.shields.io/github/issues/IrfEazy/smbud-project.svg?style=for-the-badge)](https://github.com/IrfEazy/smbud-project/issues)
 [![MIT License](https://img.shields.io/github/license/IrfEazy/smbud-project.svg?style=for-the-badge)](https://github.com/IrfEazy/smbud-project/blob/main/LICENSE)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555)](https://linkedin.com/in/irfan-cela-1511b3244)
 
 
 
@@ -234,15 +233,16 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Irfan Cela - <!--[@your_twitter](https://twitter.com/your_username) - -->irfan.cela@mail.polimi.it
+Irfan Cela - [LinkedIn](https://linkedin.com/in/irfan-cela-1511b3244) - irfan.cela@mail.polimi.it
 
-Fabio Lusha - fabio.lusha@mail.polimi.it
+Fabio Lusha - [LinkedIn](https://www.linkedin.com/in/fabio-lusha-816410252/) - fabio.lusha@mail.polimi.it
 
-Alberto Sandri - alberto.sandri@mail.polimi.it
+Alberto Sandri - [LinkedIn](https://www.linkedin.com/in/alberto-sandri-780264166/) - alberto.sandri@mail.polimi.it
 
-Bianca Christiana Savoiu Marinas - biancachristiana.savoiu@mail.polimi.it
+Bianca Christiana Savoiu Marinas - [LinkedIn](https://www.linkedin.com/in/bianca-savoiu-0766bb191/) -
+biancachristiana.savoiu@mail.polimi.it
 
-Enrico Simionato - enrico.simionato@mail.polimi.it
+Enrico Simionato - [LinkedIn](https://www.linkedin.com/in/enrico-simionato-5791b919b/) - enrico.simionato@mail.polimi.it
 
 Project Link: [https://github.com/IrfEazy/smbud-project](https://github.com/IrfEazy/smbud-project)
 
