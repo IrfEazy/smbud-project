@@ -70,7 +70,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <!--<li><a href="#roadmap">Roadmap</a></li>-->
-    <li><a href="#contributing">Contributing</a></li>
+    <!--<li><a href="#contributing">Contributing</a></li>-->
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <!--<li><a href="#acknowledgments">Acknowledgments</a></li>-->
@@ -201,6 +201,7 @@ and known issues).
 
 <!-- CONTRIBUTING -->
 
+<!--
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any
@@ -217,7 +218,7 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+-->
 
 
 <!-- LICENSE -->
