@@ -183,7 +183,7 @@ rely on any external dependencies or services._
     git clone https://github.com/IrfEazy/smbud-project.git
     ```
 
-<p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
 
