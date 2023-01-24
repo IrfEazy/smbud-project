@@ -28,7 +28,7 @@
 [![MIT License](https://img.shields.io/github/license/IrfEazy/smbud-project.svg?style=for-the-badge)](https://github.com/IrfEazy/smbud-project/blob/main/LICENSE)
 
 <br/>
-<div style="text-align: center">
+<div align="center">
     <a href="https://github.com/IrfEazy/smbud-project">
         <img src="images/logo.ico" alt="Logo" width="80" height="80">
     </a>
@@ -115,7 +115,7 @@ Each scientific paper has a full description of document structure and content a
 * Sections: title, text (by paragraph), subsections, figures (image URL and caption)
 * Bibliography (set of refs.)
 
-<p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
@@ -127,7 +127,7 @@ This section lists any major frameworks/libraries used to bootstrap the project.
 * ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 * ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
-<p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
 
@@ -192,7 +192,7 @@ work well in this space. You may also link to more resources.-->
 
 _For more examples, please refer to the [Documentation](./latex/out/Project.pdf)_
 
-<p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
 
@@ -209,13 +209,13 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
 
@@ -232,4 +232,4 @@ Enrico Simionato - [LinkedIn](https://www.linkedin.com/in/enrico-simionato-5791b
 
 Project Link: [https://github.com/IrfEazy/smbud-project](https://github.com/IrfEazy/smbud-project)
 
-<p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
