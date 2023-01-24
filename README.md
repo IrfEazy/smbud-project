@@ -1,89 +1,91 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<!--
+    Improved compatibility of back to a top link: See:
+    https://github.com/othneildrew/Best-README-Template/pull/73
+-->
+
 <a name="readme-top"></a>
+
 <!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
+    *** Thanks for checking out the Best-README-Template. If you have a suggestion
+    *** that would make this better, please fork the repo and create a pull request
+    *** or simply open an issue with the tag "enhancement".
+    *** Don't forget to give the project a star!
+    *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
-<!-- PROJECT SHIELDS -->
 <!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+    *** I'm using markdown "reference style" links for readability.
+    *** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+    *** See the bottom of this document for the declaration of the reference variables
+    *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+    *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors](https://img.shields.io/github/contributors/IrfEazy/smbud-project.svg?style=for-the-badge)](https://github.com/IrfEazy/smbud-project/graphs/contributors)
 [![Forks](https://img.shields.io/github/forks/IrfEazy/smbud-project.svg?style=for-the-badge)](https://github.com/IrfEazy/smbud-project/network/members)
 [![Stargazers](https://img.shields.io/github/stars/IrfEazy/smbud-project.svg?style=for-the-badge)](https://github.com/IrfEazy/smbud-project/stargazers)
 [![Issues](https://img.shields.io/github/issues/IrfEazy/smbud-project.svg?style=for-the-badge)](https://github.com/IrfEazy/smbud-project/issues)
 [![MIT License](https://img.shields.io/github/license/IrfEazy/smbud-project.svg?style=for-the-badge)](https://github.com/IrfEazy/smbud-project/blob/main/LICENSE)
 
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/IrfEazy/smbud-project">
-    <img src="images/logo.ico" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">Systems and Methods for Big and Unstructured Data</h3>
-
-  <p>
-    Systems and Methods for Big and Unstructured Data project.
-    <br />
-    <a href="https://github.com/IrfEazy/smbud-project"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/IrfEazy/smbud-project">View Demo</a>
-    ·
-    <a href="https://github.com/IrfEazy/smbud-project/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/IrfEazy/smbud-project/issues">Request Feature</a>
-  </p>
+<br/>
+<div style="text-align: center">
+    <a href="https://github.com/IrfEazy/smbud-project">
+        <img src="images/logo.ico" alt="Logo" width="80" height="80">
+    </a>
+    <h3 style="text-align: center">Systems and Methods for Big and Unstructured Data</h3>
+    <p>
+        Project of Systems and Methods for Big and Unstructured Data.
+        <br/>
+        <a href="https://github.com/IrfEazy/smbud-project">
+            <strong>Explore the docs »</strong>
+        </a>
+        <br/>
+        <br/>
+        <a href="https://github.com/IrfEazy/smbud-project">View Demo</a>
+        ·
+        <a href="https://github.com/IrfEazy/smbud-project/issues">Report Bug</a>
+        ·
+        <a href="https://github.com/IrfEazy/smbud-project/issues">Request Feature</a>
+    </p>
 </div>
-
-
-
-<!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <!--<li><a href="#roadmap">Roadmap</a></li>-->
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <!--<li><a href="#acknowledgments">Acknowledgments</a></li>-->
-  </ol>
+    <summary>Table of Contents</summary>
+    <ol>
+        <li>
+            <a href="#about-the-project">About The Project</a>
+            <ul>
+                <li>
+                    <a href="#built-with">Built With</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#getting-started">Getting Started</a>
+            <ul>
+                <li>
+                    <a href="#prerequisites">Prerequisites</a>
+                </li>
+                <li>
+                    <a href="#installation">Installation</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#usage">Usage</a>
+        </li>
+        <li>
+            <a href="#contributing">Contributing</a>
+        </li>
+        <li>
+            <a href="#license">License</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ol>
 </details>
 
-
-
-<!-- ABOUT THE PROJECT -->
-
 ## About The Project
-
-<!--[![Product Name Screen Shot][product-screenshot]](https://example.com)-->
 
 The purpose of the project is to create a bibliographic database, namely a system able to store and manage data
 regarding scientific articles and all their meaningful characteristics and relations with authors and the place where
@@ -100,8 +102,8 @@ the latest version of data was employed, namely DBLP-Citation network V13. The d
 Neo4j because it was huge and our machines with limited computing power were not able to handle it, so just a part of it
 was taken, containing information about 2315 papers.
 
-The queries in the main document are collected in a file reachable by
-this [link](https://github.com/IrfEazy/smbud-project/blob/main/neo4j/queries.cyp)
+This [link](https://github.com/IrfEazy/smbud-project/blob/main/neo4j/queries.cyp) collects in a file the queries of the
+main document.
 
 ### MongoDB
 
@@ -113,22 +115,18 @@ Each scientific paper has a full description of document structure and content a
 * Sections: title, text (by paragraph), subsections, figures (image URL and caption)
 * Bibliography (set of refs.)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-This section list any major frameworks/libraries used to bootstrap the project.
+This section lists any major frameworks/libraries used to bootstrap the project.
 
 * ![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
 * ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 * ![Neo4J](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)
 * ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
+<p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Getting Started
 
@@ -143,7 +141,31 @@ This is an example of how to list things you need to use the software and how to
    ```shell
    ./install-neo4j.sh
    ```
-
+* Install MongoDB
+  ```shell
+  ./install-mongodb.sh
+  ```
+* Run Mongo-Shell by launching `mongosh` command in the terminal, and then create Administrative MongoDB User
+  ```shell
+  use admin
+  ```
+  ```shell
+  db.createUser({
+    user: "username",
+    pwd: "password",
+    roles: [{
+      role: "userAdminAnyDatabase",
+      db: "admin"
+    }]
+  })
+  ```
+  ```shell
+  quit()
+  ```
+    * To test the changes, access the mongo shell using the created administrative user.
+      ```shell
+      mongosh -u username -p --authenticationDatabase admin
+      ```
 * Download and extract the dataset
    ```shell
    wget https://originalstatic.aminer.cn/misc/dblp.v13.7z
@@ -160,11 +182,7 @@ rely on any external dependencies or services._
     git clone https://github.com/IrfEazy/smbud-project.git
     ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
+<p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
 
@@ -173,32 +191,7 @@ work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-
-<!--
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (
-and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
--->
-
-
-
-<!-- CONTRIBUTING -->
+<p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contributing
 
@@ -215,21 +208,13 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
+<p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
+<p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Contact
 
@@ -246,4 +231,4 @@ Enrico Simionato - [LinkedIn](https://www.linkedin.com/in/enrico-simionato-5791b
 
 Project Link: [https://github.com/IrfEazy/smbud-project](https://github.com/IrfEazy/smbud-project)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p style="text-align: right">(<a href="#readme-top">back to top</a>)</p>
