@@ -13,6 +13,11 @@ echo "deb [arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-5.0.gpg] https
 # Update the local package database
 sudo apt-get update
 
+#MongoDb has no official build for ubuntu 22.04 at the moment.You can force the installation of libssl1.1 by adding the ubuntu 20.04 source, necessary to met the dependencies and install mongod-org:
+echo "deb http://security.ubuntu.com/ubuntu focal-security main" | sudo tee /etc/apt/sources.list.d/focal-security.list
+sudo apt-get update
+sudo apt-get install libssl1.1
+
 # Install the MongoDB with the following command
 sudo apt-get --install-recommends install mongodb-org
 
