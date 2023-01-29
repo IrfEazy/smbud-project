@@ -1,4 +1,4 @@
-#!/usr/bin/fish
+#!/usr/bin/env bash
 # Require sudo rights
 sudo echo ""
 
